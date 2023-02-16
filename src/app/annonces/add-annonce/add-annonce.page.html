@@ -2,7 +2,7 @@
   <ion-toolbar class="wrapper">
     <ion-buttons slot="start">
       <ion-back-button
-      name="chevron-back-outline"
+        name="chevron-back-outline"
         defaultHref="/annonces"></ion-back-button>
     </ion-buttons>
     <ion-title>Ajouter Annonce</ion-title>
@@ -18,7 +18,7 @@
     </div>
 
 
-    </div>
+  </div>
 
 
 
@@ -28,8 +28,8 @@
         <ion-col size="10" offset="1" class="container">
           <div text-center class="ion-margin-bottom" style="margin-top: 15%">
             <form #f="ngForm"
-              (ngSubmit)="addAnnonce(f.value)"
-              class="form-group">
+                  (ngSubmit)="addAnnonce(f.value)"
+                  class="form-group">
               <ion-item class="ion-margin-bottom">
                 <ion-input
                   placeholder="Titre de votre annonce "
@@ -39,7 +39,7 @@
                   id="title"
                   ngModel
                   required></ion-input
-              ></ion-item>
+                ></ion-item>
               <ion-item class="ion-margin-bottom">
                 <ion-input
                   placeholder="Image URL"
@@ -52,9 +52,9 @@
                   required
 
                 ></ion-input
-              ></ion-item>
+                ></ion-item>
               <ion-item class="ion-margin-bottom">
-                <ion-select placeholder="Catégorie" ngModel name="Catégorie">
+                <ion-select placeholder="Categorie" ngModel name="Catégorie">
                   <ion-select-option value="Maison">Maison</ion-select-option>
                   <ion-select-option value="Appartement">Appartement</ion-select-option>
                   <ion-select-option value="Local Commercial">Local Commercial</ion-select-option>
@@ -72,7 +72,7 @@
                   required
 
                 ></ion-input
-              ></ion-item>
+                ></ion-item>
               <ion-item class="ion-margin-bottom">
                 <ion-input
                   placeholder="Prix "
@@ -86,7 +86,7 @@
                 ></ion-input
                 ></ion-item>
               <ion-item class="ion-margin-bottom">
-                <ion-select placeholder="Choisissez la région" ngModel name="Région/Ville">
+                <ion-select placeholder="Choisissez la région" ngModel name="Region">
                   <ion-select-option value="Tunis">Tunis</ion-select-option>
                   <ion-select-option value="Ariana">Ariana</ion-select-option>
                   <ion-select-option value="Ben Arous"> Ben Arous</ion-select-option>
@@ -103,7 +103,7 @@
                   ngModel
                   required></ion-input>
 
-                </ion-item>
+              </ion-item>
               <ion-button
                 type="submit"
                 expand="full"
@@ -120,7 +120,3 @@
   >
 
 </ion-content>
-
-
-
-
