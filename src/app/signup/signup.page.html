@@ -1,0 +1,56 @@
+<ion-content class="bg-color">
+
+  <ion-card class="ion-no-margin">
+
+    <ion-card-header>
+      <ion-card-title>
+        Connexion
+      </ion-card-title>
+      <ion-card-subtitle>
+       Remplir vos corrdonnées
+      </ion-card-subtitle>
+    </ion-card-header>
+    <form #f="ngForm" (ngSubmit)="registerUser(f.value)">
+      <ion-card-content>
+        <ion-item>
+          <ion-input name="name" type="text" placeholder="Nom & Prénom" ngModel >
+            <ion-icon name="person-outline"></ion-icon>
+          </ion-input>
+        </ion-item>
+        <div>
+
+
+        </div>
+        <ion-item>
+          <ion-input name="phone" type="text" placeholder="Numéro Portable" ngModel>
+            <ion-icon name="call-outline"></ion-icon>
+          </ion-input>
+        </ion-item>
+        <div>
+
+
+        </div>
+        <ion-item>
+          <ion-input name="email" type="text" placeholder="Email" ngModel >
+            <ion-icon name="mail-outline"></ion-icon>
+          </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input name="password" type="Mot De Passe" placeholder="************" ngModel>
+            <ion-icon name="lock-closed"></ion-icon>
+          </ion-input>
+        </ion-item>
+
+
+        <div class="sign-btn-wrap">
+          <ion-button shape="round" type="submit" fill="solid" class="sign-btn">Inscription</ion-button>
+
+        </div>
+
+
+      </ion-card-content>
+    </form>
+  </ion-card>
+
+</ion-content>
